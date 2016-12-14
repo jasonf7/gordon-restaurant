@@ -10,12 +10,7 @@ injectTapEventPlugin();
 const App = ({ children }) =>
 	<MuiThemeProvider>
 		<div>
-	        <h1>Filter table</h1>
 	        { children }
-	        <footer>
-	            <Link to="/">Filterable Table</Link>
-	            <Link to="/about">About</Link>
-	        </footer>
 	    </div>
 	</MuiThemeProvider>;
 

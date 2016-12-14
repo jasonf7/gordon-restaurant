@@ -1,12 +1,19 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import { Route, IndexRedirect } from 'react-router';
 import App from './components/App';
-import FilterableTable from './containers/FilterableTable';
-import About from './components/About';
+import Dashboard from './containers/Dashboard';
+import Order from './components/Order/Order';
+import Menu from './components/Menu/Menu';
+
+// TODO: auto-redirect to login
 
 export default (
 	<Route path="/" component={App}>
-		<IndexRoute component={FilterableTable} />
-		<Route path="/about" component={About} />
+		<IndexRedirect to="dashboard" />
+		<Route path="dashboard" component={Dashboard}>
+			<IndexRedirect to="order" />
+			<Route path="order" component={Order} />
+			<Route path="menu" component={Menu} />
+		</Route>
 	</Route>
 );
