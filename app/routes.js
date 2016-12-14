@@ -13,7 +13,7 @@ export default (
 			<IndexRedirect to="order" />
 			<Route path="order" component={Order} />
 			<Route path="menu" component={Menu} />
-			<Route path="/login" component={Login} />
 		</Route>
+		<Route path="login" component={Login} />
 	</Route>
 );

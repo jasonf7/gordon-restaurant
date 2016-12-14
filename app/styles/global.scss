@@ -1,48 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import './reset';
 @import './colors';
 
 :global {
-    *, *:before, *:after {
-        box-sizing: border-box;
-    }
+	*, *:before, *:after {
+		box-sizing: border-box;
+	}
 
-    a {
-        text-decoration: none;
-        color: $black;
-    }
+	a {
+		text-decoration: none;
+		color: $black;
+	}
 
-    body {
-        font-weight: 200;
-        font-family: 'Helvetica Neue', 'Roboto', Arial, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    }
+	body {
+		font-weight: 200;
+		font-family: 'Helvetica Neue', 'Roboto', Arial, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	}
 
-    .light-text {
-        font-weight: 100;
-    }
+	.light-text {
+		font-weight: 100;
+	}
 
-    .reg-text {
-        font-weight: 200;
-    }
+	.reg-text {
+		font-weight: 200;
+	}
 
-    .med-text {
-        font-weight: 400;
-    }
+	.med-text {
+		font-weight: 400;
+	}
 
-    .bold-text {
-        font-weight: 500;
-    }
+	.bold-text {
+		font-weight: 500;
+	}
 
-    .heavy-bold-text {
-        font-weight: 600;
-    }
+	.heavy-bold-text {
+		font-weight: 600;
+	}
 
-    .clear-fix {
-        &:after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 0;
-            clear: both;
-        }
-    }
+	.clear-fix {
+		&:after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			clear: both;
+		}
+	}
 }
