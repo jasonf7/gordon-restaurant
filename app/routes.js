@@ -4,8 +4,7 @@ import App from './components/App';
 import Dashboard from './containers/Dashboard';
 import Order from './components/Order/Order';
 import Menu from './components/Menu/Menu';
-
-// TODO: auto-redirect to login
+import Login from './components/Login/Login';
 
 export default (
 	<Route path="/" component={App}>
@@ -14,6 +13,7 @@ export default (
 			<IndexRedirect to="order" />
 			<Route path="order" component={Order} />
 			<Route path="menu" component={Menu} />
+			<Route path="/login" component={Login} />
 		</Route>
 	</Route>
 );
