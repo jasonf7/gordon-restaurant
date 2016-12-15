@@ -1,0 +1,13 @@
+.outer {
+    min-width: 600px;
+    width: 80%;
+
+    .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        border: 2px dashed;
+    }
+}
